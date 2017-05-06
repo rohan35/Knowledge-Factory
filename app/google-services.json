@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "58626161778",
+    "firebase_url": "https://knowledge-factory-c810d.firebaseio.com",
+    "project_id": "knowledge-factory-c810d",
+    "storage_bucket": "knowledge-factory-c810d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58626161778:android:551730a976dbd84b",
+        "android_client_info": {
+          "package_name": "com.raydevelopers.sony.knowledgefactory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58626161778-7qn805o5mmnfccrtuetcrt49hv6slett.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2VtLhkIZnASDZlkbSx-xJO3AdcOlb9FA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Page 0"
+        android:id="@+id/text"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/layout_bg"
+        android:gravity="center"
+        android:elevation="6dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+
+</FrameLayout>
