@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.raydevelopers.sony.knowledgefactory.R;
 import com.raydevelopers.sony.knowledgefactory.data.FactsContract;
 import com.raydevelopers.sony.knowledgefactory.data.FactsDbHelper;
@@ -32,15 +35,13 @@ public class DemoFragment extends Fragment {
         // the fragment was instantiated in the
         // CustomPagerAdapter
         Bundle args = getArguments();
-
-        ((TextView) rootView.findViewById(R.id.text)).setText(args.getString("Fact"));
-        SharedPreferences sharedPreferences= PreferenceManager.getDefaultSharedPreferences(getContext());
-        SharedPreferences.Editor editor=sharedPreferences.edit();
-        editor.putString("factNumber",args.getString("factNumber"));
-        editor.apply();
+        MobileAds.initialize(getContext(),getString(R.string.app_id));
+        AdView mAdView = (AdView) rootView.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        ((TextView) rootView.findViewById(R.id.text)).setText(args.getString(getContext().getString(R.string.send_fact_text)));
         return rootView;
     }
-
 
 
 }

@@ -15,13 +15,15 @@ import android.support.annotation.Nullable;
 
 public class FactsProvider extends ContentProvider {
     private FactsDbHelper factsDbHelper;
-    public static final int CODE_FACTS= 1;
+    public static final int CODE_FACTS = 1;
     private static final UriMatcher sUriMatcher = buildUriMatcher();
+
     @Override
     public boolean onCreate() {
-        factsDbHelper=new FactsDbHelper(getContext());
+        factsDbHelper = new FactsDbHelper(getContext());
         return true;
     }
+
     public static UriMatcher buildUriMatcher() {
         String content = FactsContract.CONTENT_AUTHORITY;
         UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
@@ -30,13 +32,14 @@ public class FactsProvider extends ContentProvider {
         return matcher;
 
     }
+
     @Nullable
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
         Cursor cursor;
         switch (sUriMatcher.match(uri)) {
             case CODE_FACTS:
-                cursor =factsDbHelper.getReadableDatabase().query(
+                cursor = factsDbHelper.getReadableDatabase().query(
                         FactsContract.FactsEntry.TABLE_NAME,
                         projection,
                         selection,
@@ -52,6 +55,7 @@ public class FactsProvider extends ContentProvider {
         cursor.setNotificationUri(getContext().getContentResolver(), uri);
         return cursor;
     }
+
     @Override
     public int bulkInsert(@NonNull Uri uri, @NonNull ContentValues[] values) {
         final SQLiteDatabase db = factsDbHelper.getWritableDatabase();

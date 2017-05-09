@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Knowledge Factory</string>
     <string name="content_authorities">com.raydevelopers.sony.knowledgefactory</string>
+    <string name="share_string">Learn cool facts and gain general knowledge. Download Knowledge Factory from  </string>
+    <string name="share_link">https://play.google.com/store/apps/details?id=com.raydevelopers.sony.knowledgefactory</string>
+    <string name="sp_viewpager_pos">currentPosition</string>
+    <string name="no_internet">No Internet Connectivity</string>
+    <string name="facts">facts</string>
+    <string name="send_fact_text">Fact</string>
+    <string name="send_fact_number">factNumber</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8488360046079909/2378484671</string>
+    <string name="app_id">ca-app-pub-8488360046079909~9901751472</string>
 </resources>
