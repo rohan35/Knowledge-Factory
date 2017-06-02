@@ -6,3 +6,6 @@ Once the app has been installed, the facts and general knowledge are accessible 
 The simple and effective UI design of the app helps you to easily maneuver through the list of available facts and GK. The range of topics diverges from geography to interesting facts about famous personalities. More facts and general knowledge will be added in the future in this app. 
 
 This app can be used during friends and family gatherings to play fun quiz games. This app can also be used by school teachers to widen their class knowledge on interesting facts and general knowledge.
+
+
+![ALT]( https://github.com/rohan35/Knowledge-Factory/blob/master/Screenshot_20170508-180741small.png )
