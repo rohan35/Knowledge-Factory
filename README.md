@@ -9,5 +9,4 @@ This app can be used during friends and family gatherings to play fun quiz games
 
 
 ![ALT]( https://github.com/rohan35/Knowledge-Factory/blob/master/Screenshot_20170508-180741small.png )
-
-![ALT] ( https://github.com/rohan35/Knowledge-Factory/blob/master/Screenshot_20170508-180814_small.png )
+![ALT]( https://github.com/rohan35/Knowledge-Factory/blob/master/Screenshot_20170508-180814_small.png )
